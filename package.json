@@ -1,0 +1,69 @@
+{
+  "name": "@onsever/create-express-ts-app",
+  "version": "1.0.0",
+  "description": "This is a starter template for Express.js with TypeScript that includes Jest, Prettier, ESLint, and more.",
+  "bin": "./bin/cli.js",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
+    "start": "nodemon ./build/main.js",
+    "dev": "nodemon -r tsconfig-paths/register src/main.ts | pino-pretty",
+    "lint:check": "eslint ''src/**/*.ts",
+    "lint:fix": "eslint 'src/**/*.ts' --fix",
+    "prettier:check": "prettier --check 'src/**/*.{ts,json}'",
+    "prettier:fix": "prettier --write 'src/**/*.{ts,json}'",
+    "test": "jest --config jest.config.ts",
+    "test:watch": "jest --watchAll --config jest.config.ts --collectCoverage=false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onsever/create-express-ts-app"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "typescript"
+  ],
+  "author": "Onurcan Sever",
+  "license": "MIT",
+  "devDependencies": {
+    "@jest/types": "^29.6.3",
+    "@types/compression": "^1.7.3",
+    "@types/cookie-session": "^2.0.45",
+    "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.17",
+    "@types/hpp": "^0.2.2",
+    "@types/jest": "^29.5.4",
+    "@types/morgan": "^1.9.5",
+    "@types/node": "^20.6.0",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "jest": "^29.6.4",
+    "nodemon": "^3.0.1",
+    "pino": "^8.15.1",
+    "pino-pretty": "^10.2.0",
+    "prettier": "^3.0.3",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.7",
+    "tsc-watch": "^6.0.4",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2",
+    "typescript-transform-paths": "^3.4.6"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^7.0.0",
+    "hpp": "^0.2.3",
+    "http-status-codes": "^2.2.0",
+    "morgan": "^1.10.0"
+  }
+}

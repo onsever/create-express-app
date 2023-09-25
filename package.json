@@ -1,6 +1,6 @@
 {
   "name": "@onsever/create-express-ts-app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is a starter template for Express.js with TypeScript that includes Jest, Prettier, ESLint, and more.",
   "bin": "./bin/cli.js",
   "main": "main.js",

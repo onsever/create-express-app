@@ -38,5 +38,6 @@
       "@utils/*": ["./src/utils/*"],
       "@root/*": ["./src/*"]
     }
-  }
+  },
+  "exclude": ["node_modules", "build", "jest.config.ts", "tests"]
 }

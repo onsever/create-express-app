@@ -11,26 +11,24 @@ This is a starter template for [Express](https://expressjs.com/) web framework f
 - Linting support with [ESLint](https://eslint.org/)
 - Logging support with [Pino](https://getpino.io/)
 
-## Getting Started
-
-Please make sure you have [pnpm](https://pnpm.io/) installed.
-
 ## Usage
 
-To use this template, run the following command:
+To use this template, run one of the following commands:
 
 ```bash
 npx @onsever/create-express-ts-app <project-name>
+npx @onsever/create-express-ts-app .
+npx @onsever/create-express-ts-app ./
 ```
 
 ## Commands
 
-- `pnpm build` - Build the project
-- `pnpm start` - Start the server in production mode
-- `pnpm dev` - Start the server in development mode with live reload
-- `pnpm lint:check` - Check for linting errors
-- `pnpm lint:fix` - Fix linting errors
-- `pnpm prettier:check` - Check for formatting errors
-- `pnpm prettier:fix` - Fix formatting errors
-- `pnpm test` - Run tests
-- `pnpm test:watch` - Run tests in watch mode
+- `npm run build` - Build the project
+- `npm run start` - Start the server in production mode
+- `npm run dev` - Start the server in development mode with live reload
+- `npm run lint:check` - Check for linting errors
+- `npm run lint:fix` - Fix linting errors
+- `npm run prettier:check` - Check for formatting errors
+- `npm run prettier:fix` - Fix formatting errors
+- `npm run test` - Run tests
+- `npm run test:watch` - Run tests in watch mode
